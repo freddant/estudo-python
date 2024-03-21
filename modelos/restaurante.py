@@ -10,8 +10,10 @@ class Restaurante:
     print(dir(objeto da classe)) mostra todos os metodos
     que a classe possui
     '''
-    def __init__(self, nome, categoria):
+    def __init__(self, nome, categoria, bairro, dono):
         self.nome = nome
+        self.bairro = bairro
+        self.dono = dono
         self.categoria = categoria
         self.ativo = False
         Restaurante.restaurantes.append(self)
@@ -29,8 +31,8 @@ class Restaurante:
         for restaurante in Restaurante.restaurantes:
             print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
 
-restaurante_praca = Restaurante('Praca', 'Gourmet')
-restaurante_pizza = Restaurante('Pizza Planet', 'Italiana')
+restaurante_praca = Restaurante('Praca', 'Gourmet','Centro','Jorginho')
+restaurante_pizza = Restaurante('Pizza Planet', 'Italiana','Liberdade','Pedrinho')
 
 Restaurante.listar_restaurantes()
 #print(vars(restaurante_pizza))

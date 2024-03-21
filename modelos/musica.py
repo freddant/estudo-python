@@ -15,7 +15,7 @@ m1.nome = 'Quero Esquecer Você'
 m2 = Musica('Jorge Ben Jor', 3.48, 'O Telefone Tocou Novamente')
 m2.artista = 'Jorge Ben Jor'
 m2.duracao = 3.48
-m2.nome = 'O Telefone Tocou Novamente'
+m2.nome = 'O Telefone Tocou Novamentee'
 
 m3 = Musica('Gilsons', 2.36, 'Vento Alecrim')
 m3.artista = 'Gilsons'
